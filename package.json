@@ -1,0 +1,9 @@
+{
+  "name": "cat-door-with-light-sensor",
+  "author": "Yoctopuce",
+  "description": "Yoctopuce Light-sensor-enabled cat door example",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "yoctolib-es2017": "^1.10.42982.0"
+  }
+}
