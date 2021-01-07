@@ -1,3 +1,6 @@
+Rationale
+---------
+
 Even if cats are naturally nocturnal animals, it is often recommended not to let them out at night: not only is it when they have a higher tendency to bring back live toys in the house, but it's also during the night that they are more often victims of accidents. This is why automatic cat flap manufacturers propose a *curfew* mode - very trendy - enabling you to stop the animals going out on a defined schedule. 
 
 ![Configuring the curfew at fixed times](https://www.yoctopuce.com/pubarchive/2021-01/surepet-ui-EN_1.png)
@@ -7,7 +10,7 @@ Except that... between September, when we mounted the cat flap, and January, the
 Principle
 ---------
 
-The principle is simple: somewhere in the house, a Yocto-Light-V3 sensor connected to the network measures the outside luminosity. The simplest way is to mount it directly on a YoctoHub-Ethernet or a YoctoHub-Wireless-n close to a network access point and to a window. Somewhere else, a monitoring computer periodically checks the ambient luminosity and (un)locks the cat flap depending on the hour and on the light, by contacting the Surepet Care server. 
+The principle is simple: somewhere in the house, a [Yocto-Light-V3](https://www.yoctopuce.com/EN/products/usb-environmental-sensors/yocto-light-v3) sensor connected to the network measures the outside luminosity. The simplest way is to mount it directly on a [YoctoHub-Ethernet](https://www.yoctopuce.com/EN/products/extensions-and-networking/yoctohub-ethernet) or a [YoctoHub-Wireless-n](https://www.yoctopuce.com/EN/products/extensions-and-networking/yoctohub-wireless-n) close to a network access point and to a window. Somewhere else, a monitoring computer periodically checks the ambient luminosity and (un)locks the cat flap depending on the hour and on the light, by contacting the Surepet Care server. 
 
 ![Controlling the cat flap with a light sensor](https://www.yoctopuce.com/pubarchive/2021-01/catdoor-with-light-sensor-components-EN_2.png)
 
@@ -23,7 +26,7 @@ The separation enables us to simplify the application by splitting it into compo
 
 ![Articulation of the controlling system](https://www.yoctopuce.com/pubarchive/2021-01/catdoor-with-light-sensor-design-EN_1.png)
 
-We decided to perform the implementation in `Node.js`, but you can very easily translate this code into any other language.
+We decided to perform the implementation in Node.js, but you can very easily translate this code into any other language.
 
 Implementation
 --------------
